@@ -1,0 +1,75 @@
+front_react/
+│
+├── .env
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+├── tsconfig.json
+├── tsconfig.app.json
+├── tsconfig.node.json
+├── vite.config.ts
+│
+├── public/
+│   └── favicon.ico
+│
+└── src/
+    ├── main.tsx                  # ✅ Entry point — ReactDOM + Router setup
+    ├── index.css                 # Tailwind base + global CSS
+    │
+    ├── components/
+    │   ├── layout/               # Global layout components (Navbar, Footer, etc.)
+    │   │   ├── MainLayout.tsx
+    │   │   ├── Navbar.tsx
+    │   │   └── Footer.tsx
+    │   │
+    │   ├── common/               # Reusable UI elements (buttons, inputs, etc.)
+    │   │   ├── Button.tsx
+    │   │   ├── Input.tsx
+    │   │   ├── Loader.tsx
+    │   │   └── TextArea.tsx
+    │   │
+    │   └── MentorCard.tsx       # Custom feature components
+    │
+    ├── pages/                    # ✅ Each route (Home, Bootcamp, etc.)
+    │   ├── Home.tsx
+    │   ├── Bootcamp.tsx
+    │   ├── FAQ.tsx
+    │   ├── Terms.tsx
+    │   ├── Privacy.tsx
+    │   ├── Refund.tsx
+    │   ├── Contact.tsx
+    │   └── Payment.tsx
+    │
+    ├── api/                      # API communication (axios clients)
+    │   ├── axiosClient.ts
+    │   ├── contactApi.ts
+    │   └── paymentApi.ts
+    │
+    ├── models/                   # TypeScript interfaces & types
+    │   ├── ApiResponse.ts
+    │   ├── ContactFormModel.ts
+    │   ├── PaymentModel.ts
+    │   └── index.ts
+    │
+    ├── hooks/                    # Custom React hooks
+    │   ├── useApi.ts
+    │   ├── useFormHandler.ts
+    │   └── usePaymentHandler.ts
+    │
+    ├── services/                 # Service logic (data transformations, caching, etc.)
+    │   └── apiService.ts
+    │
+    ├── utils/                    # Constants, helpers, and validators
+    │   ├── constants.ts
+    │   ├── helpers.ts
+    │   └── validators.ts
+    │
+    ├── styles/                   # Custom global or theme styles
+    │   ├── globals.css
+    │   └── tailwind.css
+    │
+    └── assets/                   # Static assets (images, icons, etc.)
+        └── mentor.png
